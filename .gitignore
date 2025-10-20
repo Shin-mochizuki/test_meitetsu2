@@ -52,6 +52,7 @@ pip-wheel-metadata/
 *.xlsx
 *.xls
 *.xlsm
+*.csv
 *.pptx
 *.docx
 *.sav
