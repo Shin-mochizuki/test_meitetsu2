@@ -1,0 +1,79 @@
+# ==== OS / Editor ====
+.DS_Store
+**/_DS_Store
+._*
+Thumbs.db
+*.swp
+*.swo
+
+# ==== Python basics ====
+__pycache__/
+*.py[cod]
+*.pyo
+*.so
+*.pyd
+*.egg-info/
+dist/
+build/
+*.log
+
+# ==== Virtual envs & secrets ====
+.venv/
+venv/
+ENV/
+env/
+pip-wheel-metadata/
+.env
+.env.*
+*.secret
+*.key
+*.pem
+
+# ==== Jupyter ====
+.ipynb_checkpoints/
+# （ノート自体は共有したい前提。出力を消してコミット推奨）
+
+# ==== Project: generated & local data ====
+/deliverables/**         # 納品物（PDF, Excel などの完成物）
+!/deliverables/.gitkeep
+/export/**               # 生成物の書き出し
+!/export/.gitkeep
+/import/**               # 受領データ（CSV, Excel など）
+!/import/.gitkeep
+/workspace/**            # 作業中ファイル（PDF, Excel など）
+!/workspace/.gitkeep
+/materials/**            # 参考資料（社外秘の可能性）
+!/materials/.gitkeep
+/models/**               # モデルや重いバイナリ
+!/models/.gitkeep
+
+# ==== Binaries (念のため拡張子でも弾く) ====
+*.pdf
+*.xlsx
+*.xls
+*.xlsm
+*.pptx
+*.docx
+*.sav
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.pt
+*.onnx
+
+# ==== Compiled reports / images ====
+*.png
+*.jpg
+*.jpeg
+*.tiff
+
+# ==== Cache / temp ====
+*.tmp
+*.bak
+*.orig
+
+# ==== PyMuPDF / PyPDF2 中間物（念のため）====
+*.xref
+*.obj
+

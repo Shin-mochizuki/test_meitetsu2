@@ -1,0 +1,36 @@
+# 基本
+import os
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+import japanize_matplotlib
+
+# 統計
+import scipy.stats as stats
+import statsmodels.api as sm
+import researchpy as rp
+
+# 機械学習
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import accuracy_score, classification_report
+
+# SHAPなど
+import shap
+shap.initjs()
+
+# 表示設定
+%matplotlib inline
+sns.set(font="IPAexGothic")  # フォント設定
+
+
+## lib関連
+from lib.data.db import *
+from lib.data.course_data import *
+from lib.sql import *
+from lib.graphs import *
+from lib.setting import *
+
+%load_ext autoreload
+%autoreload 2
